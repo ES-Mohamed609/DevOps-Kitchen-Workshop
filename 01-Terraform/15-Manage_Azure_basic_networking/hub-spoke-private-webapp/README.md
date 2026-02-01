@@ -26,7 +26,7 @@ A complete Terraform implementation of Azure Hub-Spoke network topology with a p
 
 ---
 
-## 🎯 Overview
+## Overview
 
 This project demonstrates a secure Azure network architecture using the **Hub-Spoke** topology pattern. It includes:
 
