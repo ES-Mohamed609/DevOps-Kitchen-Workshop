@@ -21,15 +21,15 @@ Write-Host ""
 
 # Step 2: Clone the forked repository
 Write-Host "[2/8] Cloning forked repository..." -ForegroundColor Yellow
-cd e:\.DEVOPS
+Set-Location e:\.DEVOPS
 if (Test-Path "DevOps-Kitchen-Workshop") {
     Write-Host "[WARN] Repository already exists, pulling latest changes..." -ForegroundColor Yellow
-    cd DevOps-Kitchen-Workshop
+    Set-Location DevOps-Kitchen-Workshop
     git pull origin main
 }
 else {
     git clone https://github.com/ES-Mohamed609/DevOps-Kitchen-Workshop.git
-    cd DevOps-Kitchen-Workshop
+    Set-Location DevOps-Kitchen-Workshop
 }
 Write-Host "[OK] Repository ready" -ForegroundColor Green
 Write-Host ""

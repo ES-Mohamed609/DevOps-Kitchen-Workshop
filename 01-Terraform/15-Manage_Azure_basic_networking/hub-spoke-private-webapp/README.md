@@ -218,8 +218,7 @@ hub-spoke-private-webapp/
     ├── Setup-SSHKey.ps1             # SSH key setup
     ├── Verify-Infrastructure.ps1    # Infrastructure verification
     ├── Check-VMConnectivity.ps1     # VM connectivity check
-    ├── Get-PrivateWebAppInfo.ps1    # Web app information
-    └── test-webapp.sh               # Web app testing (Linux)
+    └── Get-PrivateWebAppInfo.ps1    # Web app information
 ```
 
 ---
@@ -337,16 +336,6 @@ Resources Status: 10/10
    ```
    
    Expected: HTTP 200 or 403
-
-4. **Run Automated Test**:
-   ```bash
-   # From your local machine
-   scp test-webapp.sh azureuser@<VM_PUBLIC_IP>:~/
-   
-   # On the VM
-   chmod +x test-webapp.sh
-   ./test-webapp.sh
-   ```
 
 #### From Public Internet
 
