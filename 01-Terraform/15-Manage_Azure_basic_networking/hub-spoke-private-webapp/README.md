@@ -10,23 +10,24 @@ A complete Terraform implementation of Azure Hub-Spoke network topology with a p
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
-- [Architecture](#architecture)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Quick Start](#quick-start)
-- [Project Structure](#project-structure)
-- [Configuration](#configuration)
-- [Deployment](#deployment)
-- [Testing](#testing)
-- [Screenshots](#screenshots)
-- [Troubleshooting](#troubleshooting)
-- [Cleanup](#cleanup)
-- [Contributing](#contributing)
+## Overview
+## Architecture
+## Features
+## Prerequisites
+## Quick Start
+## Project Structure
+## Configuration
+## Deployment
+## Testing
+## Screenshots
+## Troubleshooting
+## Cleanup
+## Contributing
+
 
 ---
 
-## 🎯 Overview
+## Overview
 
 This project demonstrates a secure Azure network architecture using the **Hub-Spoke** topology pattern. It includes:
 
@@ -38,7 +39,7 @@ This project demonstrates a secure Azure network architecture using the **Hub-Sp
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -83,7 +84,7 @@ This project demonstrates a secure Azure network architecture using the **Hub-Sp
 
 ---
 
-## ✨ Features
+##  Features
 
 ### Network Architecture
 - ✅ **Hub-Spoke Topology**: Centralized network management
@@ -104,7 +105,7 @@ This project demonstrates a secure Azure network architecture using the **Hub-Sp
 
 ---
 
-## 📦 Prerequisites
+##  Prerequisites
 
 Before you begin, ensure you have:
 
@@ -123,7 +124,7 @@ az account set --subscription "<your-subscription-id>"
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone the Repository
 
@@ -181,7 +182,7 @@ You'll see:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 hub-spoke-private-webapp/
@@ -213,13 +214,6 @@ hub-spoke-private-webapp/
 │   ├── dns-zone-visualizer.png      # DNS Zone visualization
 │   ├── resource-groups.png          # Resource groups overview
 │   └── webapp-test.png              # Web App test from VM
-│
-└── scripts/                         # Helper scripts
-    ├── Setup-SSHKey.ps1             # SSH key setup
-    ├── Verify-Infrastructure.ps1    # Infrastructure verification
-    ├── Check-VMConnectivity.ps1     # VM connectivity check
-    ├── Get-PrivateWebAppInfo.ps1    # Web app information
-    └── test-webapp.sh               # Web app testing (Linux)
 ```
 
 ---
@@ -263,7 +257,7 @@ Edit module calls in `main.tf` or module files directly.
 
 ---
 
-## 🔧 Deployment
+##  Deployment
 
 ### Step-by-Step Deployment
 
@@ -313,7 +307,7 @@ Resources Status: 10/10
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ### Test Private Web App Access
 
@@ -358,7 +352,7 @@ Expected: **Connection timeout or error** (because it's private!)
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Web App Networking Configuration
 
@@ -400,7 +394,7 @@ Expected: **Connection timeout or error** (because it's private!)
 
 ---
 
-## 🔍 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -463,7 +457,7 @@ az resource show --ids <resource-id>
 
 ---
 
-## 🧹 Cleanup
+##  Cleanup
 
 ### Destroy All Resources
 
@@ -509,7 +503,7 @@ Approximate monthly costs (Austria East region):
 
 ---
 
-## 🛡️ Security Best Practices
+##  Security Best Practices
 
 - ✅ Use SSH keys instead of passwords
 - ✅ Restrict NSG rules to specific IPs
