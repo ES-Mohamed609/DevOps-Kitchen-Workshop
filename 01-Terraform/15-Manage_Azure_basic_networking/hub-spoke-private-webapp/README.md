@@ -10,24 +10,23 @@ A complete Terraform implementation of Azure Hub-Spoke network topology with a p
 
 ## 📋 Table of Contents
 
-## Overview
-## Architecture
-## Features
-## Prerequisites
-## Quick Start
-## Project Structure
-## Configuration
-## Deployment
-## Testing
-## Screenshots
-## Troubleshooting
-## Cleanup
-## Contributing
-
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Quick Start](#quick-start)
+- [Project Structure](#project-structure)
+- [Configuration](#configuration)
+- [Deployment](#deployment)
+- [Testing](#testing)
+- [Screenshots](#screenshots)
+- [Troubleshooting](#troubleshooting)
+- [Cleanup](#cleanup)
+- [Contributing](#contributing)
 
 ---
 
-## Overview
+## 🎯 Overview
 
 This project demonstrates a secure Azure network architecture using the **Hub-Spoke** topology pattern. It includes:
 
@@ -39,7 +38,7 @@ This project demonstrates a secure Azure network architecture using the **Hub-Sp
 
 ---
 
-##  Architecture
+## 🏗️ Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -84,7 +83,7 @@ This project demonstrates a secure Azure network architecture using the **Hub-Sp
 
 ---
 
-##  Features
+## ✨ Features
 
 ### Network Architecture
 - ✅ **Hub-Spoke Topology**: Centralized network management
@@ -105,7 +104,7 @@ This project demonstrates a secure Azure network architecture using the **Hub-Sp
 
 ---
 
-##  Prerequisites
+## 📦 Prerequisites
 
 Before you begin, ensure you have:
 
@@ -124,7 +123,7 @@ az account set --subscription "<your-subscription-id>"
 
 ---
 
-##  Quick Start
+## 🚀 Quick Start
 
 ### 1. Clone the Repository
 
@@ -182,7 +181,7 @@ You'll see:
 
 ---
 
-##  Project Structure
+## 📁 Project Structure
 
 ```
 hub-spoke-private-webapp/
@@ -257,7 +256,7 @@ Edit module calls in `main.tf` or module files directly.
 
 ---
 
-##  Deployment
+## 🔧 Deployment
 
 ### Step-by-Step Deployment
 
@@ -307,7 +306,7 @@ Resources Status: 10/10
 
 ---
 
-##  Testing
+## 🧪 Testing
 
 ### Test Private Web App Access
 
@@ -332,16 +331,6 @@ Resources Status: 10/10
    
    Expected: HTTP 200 or 403
 
-4. **Run Automated Test**:
-   ```bash
-   # From your local machine
-   scp test-webapp.sh azureuser@<VM_PUBLIC_IP>:~/
-   
-   # On the VM
-   chmod +x test-webapp.sh
-   ./test-webapp.sh
-   ```
-
 #### From Public Internet
 
 ```bash
@@ -352,7 +341,7 @@ Expected: **Connection timeout or error** (because it's private!)
 
 ---
 
-##  Screenshots
+## 📸 Screenshots
 
 ### Web App Networking Configuration
 
@@ -394,7 +383,7 @@ Expected: **Connection timeout or error** (because it's private!)
 
 ---
 
-##  Troubleshooting
+## 🔍 Troubleshooting
 
 ### Common Issues
 
@@ -457,7 +446,7 @@ az resource show --ids <resource-id>
 
 ---
 
-##  Cleanup
+## 🧹 Cleanup
 
 ### Destroy All Resources
 
@@ -503,7 +492,7 @@ Approximate monthly costs (Austria East region):
 
 ---
 
-##  Security Best Practices
+## 🛡️ Security Best Practices
 
 - ✅ Use SSH keys instead of passwords
 - ✅ Restrict NSG rules to specific IPs
